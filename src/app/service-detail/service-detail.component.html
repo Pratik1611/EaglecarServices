@@ -1,0 +1,24 @@
+<div class="services">
+    <div class="container">
+      <h1 class="text-center">Our Fleet</h1>
+      <p class="lead text-center">Choose from our range of clean, comfortable, and well-maintained vehicles.</p>
+  
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4" *ngFor="let car of cars">
+          <div class="card">
+            <img [src]="car.image" class="card-img-top" [alt]="car.name">
+            <div class="card-body">
+              <h5 class="card-title">{{ car.name }}</h5>
+              <p class="card-text">{{ car.description }}</p>
+              <ul class="list-unstyled">
+                <li><strong>Seating Capacity:</strong> {{ car.seatingCapacity }}</li>
+                <li><strong>Transmission:</strong> {{ car.transmission }}</li>
+                <li><strong>Fuel Type:</strong> {{ car.fuelType }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

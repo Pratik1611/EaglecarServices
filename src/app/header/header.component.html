@@ -1,0 +1,20 @@
+<header [ngClass]="{'sticky': isSticky}" class="header">
+    <div class="header-container">
+      <div class="header-logo">
+        <img src="assets/logo.jpeg" alt="Car Service Logo" />
+        <span>Eagle Car</span>
+      </div>
+      <nav [ngClass]="{'active': menuActive}" class="header-nav">
+        <a routerLink="/">Home</a>
+        <a routerLink="/about-us">About Us</a>
+        <a routerLink="/service-detail">Services</a>
+        <a routerLink="/contact">Contact</a>
+      </nav>
+      <div class="menu-toggle" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  
